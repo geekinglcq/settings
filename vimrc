@@ -1,13 +1,18 @@
 " Plugins
 set rtp+=~/.vim/bundle/Vundle.vim
+set rtp+=~/.vim/bundle/vim-colors-solarized
 call vundle#begin()
 let g:ycm_confirm_extra_conf = 0
 Plugin 'VundleVim/Vundle.vim'
-
 Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 filetype plugin on
+
+"ColorScheme
+syntax enable
+set background=dark
+colorscheme solarized
 
 " Global settings
 "set bg=dark
