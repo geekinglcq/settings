@@ -83,4 +83,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ssl="ssh root@115.159.218.130"
+alias ssm="ssh root@182.254.146.163"
 alias gitc="git commit"
