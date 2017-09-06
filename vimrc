@@ -4,6 +4,7 @@ set rtp+=~/.vim/bundle/vim-colors-solarized
 call vundle#begin()
 let g:ycm_confirm_extra_conf = 0
 Plugin 'VundleVim/Vundle.vim'
+"Plugin 'Valloric/YouCompleteMe'
 call vundle#end()
 filetype plugin indent on
 filetype plugin on
@@ -43,6 +44,9 @@ set title
 set t_ts=k
 set t_fs=\
 set titlestring=vim-%{split(getcwd(),'\/')[-1]}
+
+set cursorline
+set cursorcolumn
 
 " Preferences
 " Tree
