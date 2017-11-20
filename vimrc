@@ -6,6 +6,7 @@ let g:ycm_confirm_extra_conf = 0
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-commentary'
+Plugin 'Raimondi/delimitMate'
 call vundle#end()
 filetype plugin indent on
 filetype plugin on
