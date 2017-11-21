@@ -7,6 +7,10 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-commentary'
 Plugin 'Raimondi/delimitMate'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'airblade/vim-gitgutter'
 call vundle#end()
 filetype plugin indent on
 filetype plugin on
@@ -103,4 +107,7 @@ autocmd FileType c,java,sh,javascript set ts=4 sw=4 sts=4 et
 autocmd FileType go set ts=8 sw=8 sts=8
 
 
-
+" open NERDTree automatically
+autocmd vimenter * NERDTree
+" set F2 to control NERDTree
+map <C-n> :NERDTreeToggle<CR>
