@@ -11,6 +11,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-surround'
+Plugin 'klen/python-mode'
 call vundle#end()
 filetype plugin indent on
 filetype plugin on
@@ -54,6 +56,8 @@ set titlestring=vim-%{split(getcwd(),'\/')[-1]}
 set cursorline
 set cursorcolumn
 
+set nofoldenable
+set foldmethod=syntax
 " Preferences
 " Tree
 let mapleader=","
