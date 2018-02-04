@@ -1,0 +1,21 @@
+{
+    "editor.wrappingColumn": 80,
+    "workbench.colorTheme": "Default Light+",
+    "extensions.autoUpdate": false,
+    "git.enabled": false,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "extensions.ignoreRecommendations": false,
+    "latex-workshop.latex.toolchain": [
+        {
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOC%"
+            ]
+        }
+    ],
+    "latex-preview.command": "xelatex"
+}
