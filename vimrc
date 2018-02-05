@@ -4,6 +4,15 @@ set rtp+=~/.vim/bundle/vim-colors-solarized
 call vundle#begin()
 let g:ycm_confirm_extra_conf = 0
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-commentary'
+Plugin 'Raimondi/delimitMate'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-surround'
+Plugin 'klen/python-mode'
 call vundle#end()
 filetype plugin indent on
 filetype plugin on
@@ -44,6 +53,11 @@ set t_ts=k
 set t_fs=\
 set titlestring=vim-%{split(getcwd(),'\/')[-1]}
 
+set cursorline
+set cursorcolumn
+
+set nofoldenable
+set foldmethod=syntax
 " Preferences
 " Tree
 let mapleader=","
@@ -97,4 +111,7 @@ autocmd FileType c,java,sh,javascript set ts=4 sw=4 sts=4 et
 autocmd FileType go set ts=8 sw=8 sts=8
 
 
-
+" open NERDTree automatically
+autocmd vimenter * NERDTree
+" set F2 to control NERDTree
+map <C-n> :NERDTreeToggle<CR>
