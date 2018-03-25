@@ -1,6 +1,5 @@
 {
-    "editor.wrappingColumn": 80,
-    "workbench.colorTheme": "Default Light+",
+    "editor.wrappingColumn": 80,    
     "extensions.autoUpdate": false,
     "git.enabled": false,
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
@@ -17,5 +16,15 @@
             ]
         }
     ],
-    "latex-preview.command": "xelatex"
+    "latex-preview.command": "xelatex",
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/.pyc": true,
+        "__pycache__/": true,
+        ".ipynb_checkpoints/":true
+    }
 }
