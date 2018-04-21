@@ -121,7 +121,7 @@ autocmd FileType go set ts=8 sw=8 sts=8
 
 
 " open NERDTree automatically
-autocmd vimenter * NERDTree
+"autocmd vimenter * NERDTree
 " set F2 to control NERDTree
 map <C-n> :NERDTreeToggle<CR>
 
