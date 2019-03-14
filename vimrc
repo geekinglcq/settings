@@ -119,6 +119,13 @@ autocmd BufNewFile,BufRead *.coffee set filetype=coffee
 autocmd FileType c,java,sh,javascript set ts=4 sw=4 sts=4 et
 autocmd FileType go set ts=8 sw=8 sts=8
 
+" Pymode 
+let g: pymode_folding = 1
+let g: pymode_motion = 1
+let g: pymode_doc = 1
+let g: pymode_doc_bind = 'K'
+
+
 
 " open NERDTree automatically
 "autocmd vimenter * NERDTree
