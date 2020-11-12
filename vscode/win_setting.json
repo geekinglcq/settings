@@ -1,5 +1,5 @@
 {
-    "editor.wrappingColumn": 80,    
+    "editor.wrappingColumn": 80,
     "extensions.autoUpdate": false,
     "git.enabled": false,
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
@@ -25,6 +25,80 @@
         "**/.DS_Store": true,
         "**/.pyc": true,
         "__pycache__/": true,
-        ".ipynb_checkpoints/":true
-    }
+        ".ipynb_checkpoints/": true
+    },
+    "latex-workshop.latex.tools": [
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "pdflatex -> bibtex -> pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "xe->bib->xe->xe",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        }
+    ],
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.intellisense.package.enabled": true,
+    "workbench.startupEditor": "newUntitledFile",
+    "markdown-preview-enhanced.AccessKey": "uVxkda2uxQIytE-3BkGjEFXFS6NlIn0ODAPnQxC7",
+    "markdown-preview-enhanced.SecretKey": "UTbNcra8fZ5QOV-BAZaH2ocuSCwVyChfogM4xXPF",
+    "markdown-image.qiniu.accessKey": "uVxkda2uxQIytE-3BkGjEFXFS6NlIn0ODAPnQxC7",
+    "markdown-image.qiniu.secretKey": "UTbNcra8fZ5QOV-BAZaH2ocuSCwVyChfogM4xXPF",
+    "markdown-preview-enhanced.Bucket": "lunarnai",
+    "markdown-preview-enhanced.Domain": "http://cdn.lunarnai.cn",
+    "markdown-image.qiniu.domain": "http://cdn.lunarnai.cn",
+    "markdown-image.qiniu.bucket": "lunarnai",
+    "markdown-image.base.uploadMethod": "Qiniu",
+    "picgo.picBed.qiniu.bucket": "lunarnai",
+    "picgo.picBed.qiniu.url": "http://cdn.lunarnai.cn",
+    "picgo.picBed.qiniu.accessKey": "uVxkda2uxQIytE-3BkGjEFXFS6NlIn0ODAPnQxC7",
+    "picgo.picBed.qiniu.secretKey": "UTbNcra8fZ5QOV-BAZaH2ocuSCwVyChfogM4xXPF",
+    "git.ignoreMissingGitWarning": true,
+    "picgo.picBed.current": "qiniu"
 }
